@@ -18,6 +18,7 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="5.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,5 +30,8 @@
     <Folder Include="Extensions\" />
     <Folder Include="Errors\" />
     <Folder Include="Middelware\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="IRepositories\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 </Project>
