@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using API.DTO;
 using API.Entitties;
+using API.Helpers;
 
 namespace API.IRepositories
 {
@@ -13,7 +14,7 @@ namespace API.IRepositories
         Task<IEnumerable<AppUser>> GetUsersAsync();
         Task<AppUser> GeetUserByIdAsync(int id);
         Task<AppUser> GetUserByUsernameAsync(string username);
-        Task<IEnumerable<MemberDto>> GetMembersAsync();
+        Task<PagedList<MemberDto>> GetMembersAsync(UserParams userParams);
         Task<MemberDto> GetMemberAsync(string username);
     }
 }
