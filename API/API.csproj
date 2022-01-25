@@ -35,5 +35,6 @@
     <Folder Include="Repositories\" />
     <Folder Include="IRepositories\" />
     <Folder Include="Helpers\" />
+    <Folder Include="SignalR\" />
   </ItemGroup>
 </Project>
