@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using API.Entitties;
@@ -32,7 +33,7 @@ namespace API.Data
 
             foreach (var user in users)
             {
-
+                user.Photos.First().IsApproved = true;
                 user.UserName = user.UserName.ToLower();
 
                 await userManager.CreateAsync(user,"Pa$$w0rd");
